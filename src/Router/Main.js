@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import {
     Route,
     NavLink,
-    HashRouter
+    HashRouter,
+    BrowserRouter
 } from "react-router-dom";
 import Home from "./Home";
 import Stuff from "./Stuff";
@@ -13,7 +14,7 @@ import logo from '../logo.svg';
 class Main extends Component {
     render() {
         return (
-            <HashRouter>
+            <BrowserRouter>
                 <div>
                     <div className="App">
                         <header className="App-header">
@@ -30,12 +31,12 @@ class Main extends Component {
                         <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                     <div className="content">
-                        <Route exact path="/" component={Home} />
+                        <Route exact={true} path="/" component={Home} />
                         <Route path="/stuff" component={Stuff} />
                         <Route path="/contact" component={Contact} />
                     </div>
                 </div>
-            </HashRouter>
+            </BrowserRouter>
         );
     }
 }
