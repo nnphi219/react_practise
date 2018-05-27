@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import RouterContainer from './containers/RouterContainer';
+import Footer from './Footer';
+import AddTodo from './containers/Todo/AddTodo';
+import VisibleTodoList from './containers/Todo/VisibleTodoList';
+
+// import logo from './logo.svg';
 import './App.css';
-import Test from './Test/Test';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          <Test />
-        </p>
+      <div>
+        {/* <RouterContainer /> */}
+        <AddTodo />
+        <VisibleTodoList />
+        <Footer />
       </div>
     );
   }
