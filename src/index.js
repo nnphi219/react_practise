@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
-import Main from './Router/Main';
+// import Main from './Router/Main';
 import { createStore } from 'redux';
 import reducers from './reducers';
 import registerServiceWorker from './registerServiceWorker';
