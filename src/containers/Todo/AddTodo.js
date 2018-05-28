@@ -4,7 +4,6 @@ import { addTodo } from '../../actions/todoAction';
 
 class AddTodo extends React.Component {
   render() {
-    console.log("AddTodo render");
     return (
       <div>
         <form
@@ -28,7 +27,6 @@ class AddTodo extends React.Component {
 }
 
 const mapStateTpProps = (state, ownProps) => {
-  console.log("AddTodo state");
   return {}
 }
 

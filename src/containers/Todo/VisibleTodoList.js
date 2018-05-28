@@ -6,7 +6,6 @@ import { toggleTodo } from '../../actions/todoAction';
 
 class TodoListContainer extends React.Component {
   render() {
-    console.log("TodoListContainer Render");
     return (
       <TodoList
         todos={this.props.todos}
@@ -30,7 +29,6 @@ function getVisibleTodos(todos, filter) {
 }
 
 const mapStateToProps = state => {
-  console.log("TodoListContainer state");
   return {
     todos: getVisibleTodos(state.todos, state.visibilityFilter)
   }
