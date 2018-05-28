@@ -6,15 +6,21 @@ import VisibleTodoList from './containers/Todo/VisibleTodoList';
 
 // import logo from './logo.svg';
 import './App.css';
+import FilterableProductTable from './containers/ProductTable/FilterableProductTable';
 
 class App extends Component {
   render() {
     return (
       <div>
-        {/* <RouterContainer /> */}
-        <AddTodo />
-        <VisibleTodoList />
-        <Footer />
+        <div>
+          {/* <RouterContainer /> */}
+          <AddTodo />
+          <VisibleTodoList />
+          <Footer />
+        </div>
+        <div>
+          <FilterableProductTable />
+        </div>
       </div>
     );
   }

@@ -5,7 +5,6 @@ import Link from '../../components/Todo/Link';
 
 class FilterLink extends React.Component {
   render() {
-    console.log("FilterLink Render " + this.props.children);
     return (
       <Link
         active={this.props.active}
@@ -17,7 +16,6 @@ class FilterLink extends React.Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  console.log("FilterLink state");
   var filterActive = ownProps.filter === state.visibilityFilter;
   return {
     active: filterActive
